@@ -1,0 +1,45 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Ubuntu+Mono&display=swap';
+
+@small-font: 12px;
+@main-font: 20px;
+@large-font: 40px;
+@xlarge-font: 60px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+}
+
+body {
+    width: 100%;
+
+    nav {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        #nav-logo {
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        #nav-links {
+            ul {
+                display: flex;
+                flex-direction: row;
+
+                li {
+                    margin: 0 20px;
+                    list-style-type: none;
+                    font-size: @main-font;
+                }
+            }
+        }
+    }
+}
