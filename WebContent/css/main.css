@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Ubuntu+Mono&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Ubuntu+Mono:300i,400&display=swap';
 * {
   margin: 0;
   padding: 0;
@@ -7,17 +7,32 @@
 }
 body {
   width: 100%;
+  font-size: 20px;
+}
+body h1 {
+  font-size: 60px;
+}
+body h2 {
+  font-size: 40px;
+}
+body h3 {
+  font-size: 30px;
 }
 body nav {
   width: 100%;
+  height: 10vh;
   padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background: #e1eef6;
 }
 body nav #nav-logo img {
   width: 50px;
   height: 50px;
+}
+body nav #nav-links {
+  margin-top: 10px;
 }
 body nav #nav-links ul {
   display: flex;
@@ -26,5 +41,30 @@ body nav #nav-links ul {
 body nav #nav-links ul li {
   margin: 0 20px;
   list-style-type: none;
-  font-size: 20px;
+}
+body header {
+  width: 100%;
+  padding: 60px;
+  text-align: center;
+}
+body header h1,
+body header h2 {
+  letter-spacing: 8px;
+}
+body header h1 {
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+body header h2 {
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: 300;
+}
+body section {
+  width: 100%;
+  padding: 60px;
+}
+body #big-img {
+  height: 20vh;
+  background: #e53a40;
 }
